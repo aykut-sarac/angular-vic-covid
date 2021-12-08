@@ -8,7 +8,7 @@ Navigate to project folder and run `npm install` to install packages.
 
 ## Starting Mock API
 
-Run `npm run server` for a fakeAPI Json-server. Navigate to `http://localhost:5000/data`. Json-server will get csv file from offical website, if it fails it will use local db.json file.
+Run `npm run server` for a fakeAPI Json-server. Navigate to `http://localhost:5000/data`. Json-server will get csv file from offical website, if it fails it will use local db.json file. No scrapping here.
 
 ## Development server
 
@@ -22,6 +22,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-# Disclaimer
+### Disclaimer
 
 I am new to Angular, please spare me if I didnt follow best practices..
