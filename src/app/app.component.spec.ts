@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-vic-covid'`, () => {
+  it(`should have as title 'vic-covid-lga'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-vic-covid');
+    expect(app.title).toEqual('vic-covid-lga');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-vic-covid app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('vic-covid-lga app is running!');
   });
 });

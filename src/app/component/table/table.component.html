@@ -1,0 +1,48 @@
+<div class="mb-5">
+  <div class="text-center mb-2">Filter by Active Case Number</div>
+  <div class="d-flex flex-row justify-content-center">
+    <button (click)="filterLocalAreas(0)">All</button>
+    <button (click)="filterLocalAreas(250)">More than 250</button>
+    <button (click)="filterLocalAreas(500)">More than 500</button>
+  </div>
+  <table class="table table-striped border">
+    <thead>
+      <tr>
+        <th
+          scope="col"
+          [appSort]="localAreas"
+          data-order="desc"
+          data-name="LGA"
+        >
+          Area
+          <fa-icon [icon]="faSort"></fa-icon>
+        </th>
+        <th
+          scope="col"
+          [appSort]="localAreas"
+          data-order="desc"
+          data-name="active"
+        >
+          Active Cases
+          <fa-icon [icon]="faSort"></fa-icon>
+        </th>
+        <th
+          scope="col"
+          [appSort]="localAreas"
+          data-order="desc"
+          data-name="cases"
+        >
+          Total Cases
+          <fa-icon [icon]="faSort"></fa-icon>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let area of localAreas">
+        <td>{{ area.LGA }}</td>
+        <td>{{ area.active }}</td>
+        <td>{{ area.cases }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
